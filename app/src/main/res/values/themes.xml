@@ -1,0 +1,65 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.AttendenceRoll" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/color_primary</item>
+        <item name="colorPrimaryVariant">@color/color_primary</item>
+        <item name="colorOnPrimary">@color/color_primary</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/white</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+        <item name="android:forceDarkAllowed" tools:targetApi="q">false</item>
+    </style>
+
+
+    <style name="splashScreenTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:windowBackground">@drawable/shape_splash_bg</item>
+        <item name="colorPrimary">@color/color_primary</item>
+        <item name="colorPrimaryDark">@color/color_primary</item>
+        <item name="colorAccent">@color/color_primary</item>
+        <item name="android:statusBarColor">@color/color_primary</item>
+        <item name="android:navigationBarColor">@color/color_primary</item>
+    </style>
+
+    <!--<style name="login_theme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:windowBackground">@drawable/shape_login_bg</item>
+        <item name="colorPrimary">@color/purple_200</item>
+        <item name="colorPrimaryDark">@color/purple_200</item>
+        <item name="colorAccent">@color/purple_200</item>
+        <item name="android:statusBarColor">@color/color_primary</item>
+        <item name="android:navigationBarColor">@color/color_secondary</item>
+        <item name="android:forceDarkAllowed" tools:targetApi="q">false</item>
+    </style>-->
+
+    <style name="login_theme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:windowBackground">@drawable/shape_login_bg</item>
+        <item name="colorPrimary">@color/color_primary</item>
+        <item name="colorPrimaryDark">@color/color_primary</item>
+        <item name="colorAccent">@color/color_primary</item>
+        <item name="android:statusBarColor">@color/color_primary</item>
+        <item name="android:navigationBarColor">@color/color_secondary</item>
+        <item name="android:forceDarkAllowed" tools:targetApi="q">false</item>
+    </style>
+
+    <style name="login_button_style" parent="Widget.AppCompat.Button.Borderless.Colored">
+        <item name="android:background">@drawable/shape_login_btn_selector</item>
+        <item name="android:textColor">@color/login_button_text_colorlist</item>
+    </style>
+
+    <style name="app_inputfield_style" parent="Widget.AppCompat.EditText">
+        <item name="android:background">@drawable/shape_border_rectangle</item>
+        <item name="android:textColor">@color/color_primary</item>
+        <item name="android:layout_marginStart">@dimen/et_margin_start_end</item>
+        <item name="android:layout_marginEnd">@dimen/et_margin_start_end</item>
+        <item name="android:paddingTop">@dimen/et_top_bottom_padding</item>
+        <item name="android:paddingBottom">@dimen/et_top_bottom_padding</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:textColorHint">@color/ash</item>
+        <item name="android:paddingStart">20dp</item>
+    </style>
+
+</resources>

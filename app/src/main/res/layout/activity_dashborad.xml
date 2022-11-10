@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/color_secondary">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/title_dashboard"
+            android:textColor="@color/color_primary"
+            android:textSize="28dp"
+            android:textStyle="bold"
+            android:typeface="sans"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="@dimen/dashboard_title_margin_top"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginBottom="80dp">
+
+            <LinearLayout
+                android:id="@+id/ll_scan"
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                android:layout_marginStart="0dp"
+                android:layout_marginEnd="0dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:padding="28dp"
+                android:background="@drawable/shape_border_rectangle">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/scanning"
+                    android:layout_margin="8dp"/>
+
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_report"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="REPORT"
+                android:textSize="16dp"
+                android:background="@drawable/shape_border_only_button_selector"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="40dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="40dp"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_logout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_logout"
+        android:textSize="16dp"
+        style="@style/login_button_style"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="20dp"
+        android:layout_gravity="bottom"/>
+
+    <ImageView
+        android:id="@+id/iv_branch_profile"
+        android:layout_width="29dp"
+        android:layout_height="29dp"
+        android:src="@drawable/ic_username"
+        android:tint="@color/color_secondary"
+        android:scaleType="center"
+        android:background="@drawable/shape_circle"
+        android:layout_gravity="end"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="20dp"/>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

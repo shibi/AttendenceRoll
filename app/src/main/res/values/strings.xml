@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">AttendenceRoll</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Password</string>
+    <string name="label_login">Login</string>
+
+    <string name="username_empty">Enter a valid username</string>
+    <string name="password_empty">Enter a valid password</string>
+    <string name="scan_title">SCAN</string>
+    <string name="btn_dashboard">Dashboard</string>
+
+
+    <string name="title_login">Login</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="active_users_title">ACTIVE USERS</string>
+    <string name="btn_logout">Logout</string>
+    <string name="dialog_title_alert">Alert</string>
+    <string name="btn_label_no">No</string>
+    <string name="btn_label_yes">Yes</string>
+    <string name="logout_confirmation_text">Are you sure you want to logout ?</string>
+    <string name="btn_label_confirm">Confirm</string>
+    <string name="btn_label_cancel">Cancel</string>
+    <string name="logout_title">Logout</string>
+    <string name="check_out_title">Check-out alert</string>
+    <string name="login_to_your_account">Login to your account</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="force_logout_branchid_missing">Couldn\'t retrieve branch id ,Please login again !</string>
+    <string name="report_title">Report</string>
+    <string name="wrong_format_employee">Wrong employee id format</string>
+    <string name="enter_valid_employeeid">Enter a valid employee id</string>
+    <string name="checkin_different_branch">You are checked in a different branch. Logout first and re-scan employee qr code.\n\n Proceed logout from previous branch ?</string>
+    <string name="check_in">Check in</string>
+    <string name="checkedIn">Checked In</string>
+    <string name="checked_out">Checked Out</string>
+
+</resources>

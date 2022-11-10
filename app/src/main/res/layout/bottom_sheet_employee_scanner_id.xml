@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bottomSheet"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    app:behavior_hideable="true"
+    app:behavior_peekHeight="30dp"
+    app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="@color/black"
+        android:alpha="0.5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+  <LinearLayout
+      android:id="@+id/ll_arrow"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:clickable="true"
+      android:gravity="center_horizontal"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_keyboard_arrow_down_24"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:alpha="0.8"/>
+
+  </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_enter_id"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="Enter employee id"
+        android:textSize="20dp"
+        android:textColor="@color/color_primary"
+        android:textStyle="bold"
+        android:typeface="sans"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ll_arrow" />
+
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/et_manual_employeeid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/app_inputfield_style"
+        android:layout_marginTop="20dp"
+        android:hint="Employee Id"
+        android:drawablePadding="@dimen/login_field_drawable_padding"
+        android:drawableStart="@drawable/ic_username"
+        android:text="ANG"
+        app:layout_constraintTop_toBottomOf="@+id/tv_enter_id"/>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_manual_checkin"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:text="@string/check_in"
+        style="@style/login_button_style"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginStart="@dimen/btn_left_right_margin"
+        android:layout_marginEnd="@dimen/btn_left_right_margin"
+        app:layout_constraintTop_toBottomOf="@+id/et_manual_employeeid"/>
+
+
+    <LinearLayout
+        android:id="@+id/ll_gap"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/btn_manual_checkin">
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
